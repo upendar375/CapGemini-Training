@@ -1,0 +1,22 @@
+package com.capg.spring_demo1;
+
+public class Mobile {
+
+	Sim sim =new Vodaphone();
+	void call() {
+		if(sim==null) {
+			System.out.println("Phone lo sim veyya raa first");
+		}
+		else {
+		sim.call();
+	}
+		}
+	void browse() {
+		if(sim==null) {
+			System.out.println("Phone lo sim veyya raa first");
+		}
+		else {
+		sim.browse();
+}
+	}
+} 

@@ -1,0 +1,5 @@
+package com.capg.demos.service;
+
+public class TrainerServiceImpl {
+
+}

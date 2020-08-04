@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="airtel" class="com.capg.spring_demo1.Airtel">
+    
+      <property name="callcharge" value="2"/>
+    <constructor-arg name="callcharge" value="2"/>  
+    <constructor-arg name="browsingspeed" value="2"/>
+    <property name="supportednetworks">
+    <list>
+    <value>GSM</value>
+    <value>SINUPI</value>
+    <value>LTE</value>
+    </list>
+    
+    </property>
+    </bean>
+    <!--  <bean id="vodaphone" class="com.capg.spring_demo1.Vodaphone">
+    
+      <property name="callcharge" value="1"/>
+    <property name="browsingspeed" value="10"/>
+    <property name="supportednetworks">
+    <map>
+    <entry key="VoLTE" value="2020"></entry>
+    <entry key="2G" value="2007"></entry>
+    <entry key="3G" value="2010"></entry>
+    
+    
+    
+    </map>
+    
+    </property>
+    
+   </bean>
+    <bean id="sim" class="com.capg.spring_demo1.Vodaphone">
+    
+      <property name="callcharge" value="1"/>
+    <property name="browsingspeed" value="10"/>
+    <property name="supportednetworks">
+    <map>
+    <entry key="VoLTE" value="2020"></entry>
+    <entry key="3G" value="2007"></entry>
+    <entry key="5G" value="2010"></entry>
+    
+    
+    
+    </map>
+    
+    </property>
+    
+   </bean>
+   
+     <bean  id="mobile1" class="com.capg.spring_demo1.Mobile">
+     <property name="sim" ref="vodaphone"/>
+     </bean>
+     -->
+      <bean  id="mobile2" class="com.capg.spring_demo1.Mobile" autowire="byType">
+    
+     </bean>
+        
+</beans>

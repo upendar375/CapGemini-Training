@@ -1,0 +1,5 @@
+package com.capg.demos.dao;
+
+public interface TraineeDao {
+
+}
